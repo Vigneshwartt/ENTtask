@@ -1,0 +1,11 @@
+You would have used httprouter to handle the rotues earlier in GORM exercise like below.
+
+```
+import	"github.com/julienschmidt/httprouter"
+	router := httprouter.New()
+	addRootRoutes(router)
+    handler := newHandlerWrapper(router, '/api', middleware)
+	handler.GET("/test", testHandler)
+```
+
+Here in this exercise you need to use mux router
